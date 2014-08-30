@@ -59,7 +59,7 @@ bool QComboSpinBoxPlugin::isContainer() const
 
 QString QComboSpinBoxPlugin::domXml() const
 {
-    return QLatin1String("\<ui language=\"c++\">\
+    return QLatin1String("<ui language=\"c++\">\
                          <widget class=\"QComboSpinBox\" name=\"qtComboSpinBox\">\
                          </widget>\
                          <customwidgets>\

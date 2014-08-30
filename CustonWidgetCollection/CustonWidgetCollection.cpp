@@ -6,6 +6,7 @@
 #include "QColorButtonPlugin.h"
 #include "QItemLabelPlugin.h"
 #include "QComboSpinBoxPlugin.h"
+#include "QComboDoubleSpinBoxPlugin.h"
 
 CustonWidgetCollection::CustonWidgetCollection(QObject *parent)
     : QObject(parent)
@@ -17,6 +18,7 @@ CustonWidgetCollection::CustonWidgetCollection(QObject *parent)
     m_kWidgets.append( new QColorButtonPlugin( this ) );
     m_kWidgets.append( new QItemLabelPlugin( this ) );
     m_kWidgets.append( new QComboSpinBoxPlugin( this ) );
+    m_kWidgets.append( new QComboDoubleSpinBoxPlugin( this ) );
 }
 
 CustonWidgetCollection::~CustonWidgetCollection()
