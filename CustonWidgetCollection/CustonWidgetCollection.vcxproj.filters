@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{6e5d3fd2-8e6e-42d0-80cb-7a683a86d7ba}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{a2e2f0fe-41e0-4401-bfd6-6fa1b44074d4}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Other Files">
+      <UniqueIdentifier>{B67473BF-9FA1-4674-831E-CB28F72D4791}</UniqueIdentifier>
+      <Extensions>*</Extensions>
+      <ParseFiles>true</ParseFiles>
+    </Filter>
+    <Filter Include="QtCustomWidgetPlugin">
+      <UniqueIdentifier>{dfffe9dd-308e-4ef7-86f2-a1b9c2dea3f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="QtCustomWidget">
+      <UniqueIdentifier>{f19be842-4ad6-431f-a6c2-cc77ee7716be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="QtDesignerExtension">
+      <UniqueIdentifier>{d6fb0318-ab65-432c-a921-cd6d141e3b43}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CustonWidgetCollection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CustonWidgetCollection.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CustonWidgetCollection.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="QtCustomWidget\QDialEx.cpp">
+      <Filter>QtCustomWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QDialEx.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QDialEx.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="QtCustomWidget\QDoubleSpinBoxEx.cpp">
+      <Filter>QtCustomWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QDoubleSpinBoxEx.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QDoubleSpinBoxEx.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="QtCustomWidget\QSliderEx.cpp">
+      <Filter>QtCustomWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QSliderEx.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QSliderEx.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="QtCustomWidget\QSpinBoxEx.cpp">
+      <Filter>QtCustomWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QSpinBoxEx.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QSpinBoxEx.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="QtCustomWidgetPlugin\QDialExPlugin.cpp">
+      <Filter>QtCustomWidgetPlugin</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QDialExPlugin.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QDialExPlugin.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="QtCustomWidgetPlugin\QDoubleSpinBoxExPlugin.cpp">
+      <Filter>QtCustomWidgetPlugin</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QDoubleSpinBoxExPlugin.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QDoubleSpinBoxExPlugin.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="QtCustomWidgetPlugin\QSliderExPlugin.cpp">
+      <Filter>QtCustomWidgetPlugin</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QSliderExPlugin.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QSliderExPlugin.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="QtCustomWidgetPlugin\QSpinBoxExPlugin.cpp">
+      <Filter>QtCustomWidgetPlugin</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QSpinBoxExPlugin.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QSpinBoxExPlugin.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="QtCustomWidget\QItemLabel.cpp">
+      <Filter>QtCustomWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QItemLabel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QItemLabel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="QtCustomWidgetPlugin\QItemLabelPlugin.cpp">
+      <Filter>QtCustomWidgetPlugin</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QItemLabelPlugin.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QItemLabelPlugin.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="QtCustomWidgetPlugin\QColorButtonPlugin.cpp">
+      <Filter>QtCustomWidgetPlugin</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QColorButtonPlugin.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QColorButtonPlugin.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="QtCustomWidget\QColorButton.cpp">
+      <Filter>QtCustomWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QColorButton.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QColorButton.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="QtCustomWidget\QComboSpinBox.cpp">
+      <Filter>QtCustomWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QComboSpinBox.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QComboSpinBox.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="QtCustomWidgetPlugin\QComboSpinBoxPlugin.cpp">
+      <Filter>QtCustomWidgetPlugin</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QComboSpinBoxPlugin.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QComboSpinBoxPlugin.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="QtCustomWidgetPlugin\QComboDoubleSpinBoxPlugin.cpp">
+      <Filter>QtCustomWidgetPlugin</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QComboDoubleSpinBoxPlugin.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QComboDoubleSpinBoxPlugin.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="QtCustomWidget\QComboDoubleSpinBox.cpp">
+      <Filter>QtCustomWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QComboDoubleSpinBox.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QComboDoubleSpinBox.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="CustonWidgetCollection.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QtCustomWidget\QDialEx.h">
+      <Filter>QtCustomWidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QtCustomWidget\QDoubleSpinBoxEx.h">
+      <Filter>QtCustomWidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QtCustomWidget\QSliderEx.h">
+      <Filter>QtCustomWidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QtCustomWidget\QSpinBoxEx.h">
+      <Filter>QtCustomWidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QtCustomWidgetPlugin\QDialExPlugin.h">
+      <Filter>QtCustomWidgetPlugin</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QtCustomWidgetPlugin\QDoubleSpinBoxExPlugin.h">
+      <Filter>QtCustomWidgetPlugin</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QtCustomWidgetPlugin\QSliderExPlugin.h">
+      <Filter>QtCustomWidgetPlugin</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QtCustomWidgetPlugin\QSpinBoxExPlugin.h">
+      <Filter>QtCustomWidgetPlugin</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QtCustomWidget\QItemLabel.h">
+      <Filter>QtCustomWidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QtCustomWidgetPlugin\QItemLabelPlugin.h">
+      <Filter>QtCustomWidgetPlugin</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QtCustomWidgetPlugin\QColorButtonPlugin.h">
+      <Filter>QtCustomWidgetPlugin</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QtCustomWidget\QColorButton.h">
+      <Filter>QtCustomWidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QtCustomWidget\QComboSpinBox.h">
+      <Filter>QtCustomWidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QtCustomWidgetPlugin\QComboSpinBoxPlugin.h">
+      <Filter>QtCustomWidgetPlugin</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Resources\ComboSpinBox.ui">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QtCustomWidgetPlugin\QComboDoubleSpinBoxPlugin.h">
+      <Filter>QtCustomWidgetPlugin</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QtCustomWidget\QComboDoubleSpinBox.h">
+      <Filter>QtCustomWidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Resources\ComboDoubleSpinBox.ui">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="custonwidgetcollectionplugin.json">
+      <Filter>Other Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GeneratedFiles\ui_ComboSpinBox.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_ComboDoubleSpinBox.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
