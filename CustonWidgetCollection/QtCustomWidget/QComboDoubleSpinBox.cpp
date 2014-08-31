@@ -41,7 +41,7 @@ void QComboDoubleSpinBox::OnSliderValueChanged( int nValue )
     double dValue = nValue / pow( 10.0, ui.qtDoubleSpinBox->decimals() );
     ui.qtDoubleSpinBox->setValue( dValue );
     ui.qtDoubleSpinBox->blockSignals( false );
-    Q_EMIT ValueChanged( nValue );
+    Q_EMIT ValueChanged( dValue );
 }
 
 int QComboDoubleSpinBox::Decimals() const
