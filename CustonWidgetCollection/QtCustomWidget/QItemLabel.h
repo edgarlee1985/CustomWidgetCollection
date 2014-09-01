@@ -40,8 +40,9 @@ public:
     void SetHoverInnerLineColor( QColor kColor ) { m_kHoverInnerLineColor = kColor; }
     QColor GetHoverInnerLineColor() { return m_kHoverInnerLineColor; }
 
-signals:
+Q_SIGNALS:
     void clicked();
+    void ImageLoaded();
 
 protected:
     

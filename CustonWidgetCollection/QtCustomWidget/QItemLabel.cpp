@@ -83,6 +83,7 @@ void QItemLabel::mouseDoubleClickEvent( QMouseEvent* pMouseEvent )
             QPixmap kPixmap;
             kPixmap.load( strPath );
             this->setPixmap( kPixmap );
+            Q_EMIT ImageLoaded();
         }
     }
 }
@@ -126,6 +127,7 @@ void QItemLabel::dropEvent( QDropEvent* pDropEvent )
         if ( kPixmap.load( strPath ) )
         {
             this->setPixmap( kPixmap );
+            Q_EMIT ImageLoaded();
         }
     }
 }
