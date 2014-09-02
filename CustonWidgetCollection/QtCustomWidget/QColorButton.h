@@ -21,6 +21,10 @@ public:
     QColor GetColor() const;
 
     void Click();
+
+protected:
+    virtual void mouseReleaseEvent( QMouseEvent* pEevent ) override;
+
 private:
     QColorDialog m_kColorDialog;
     QColor m_kColor;

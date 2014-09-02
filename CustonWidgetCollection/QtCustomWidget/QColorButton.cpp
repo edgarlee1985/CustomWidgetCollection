@@ -1,14 +1,14 @@
 #include "QColorButton.h"
+#include <QMouseEvent>
 
 QColorButton::QColorButton(QWidget *parent)
 : QPushButton(parent)
+, m_kColor( Qt::black )
 {
     setIconSize( QSize( 32, 16 ) );
     QPixmap kPixmap( iconSize() );
-    kPixmap.fill( Qt::black );
+    kPixmap.fill( m_kColor );
     setIcon( kPixmap );
-
-    connect( this, &QPushButton::clicked, this, &QColorButton::Click );
 }
 
 QColorButton::~QColorButton()
@@ -50,4 +50,13 @@ void QColorButton::Click()
     QPixmap kPixmap( iconSize() );
     kPixmap.fill( m_kColor );
     setIcon( kPixmap );
+}
+
+void QColorButton::mouseReleaseEvent( QMouseEvent* pEevent )
+{
+    if ( isDown() && rect().contains( pEevent->pos() ) )
+    {
+        Click();
+    }
+    QPushButton::mouseReleaseEvent( pEevent );
 }
