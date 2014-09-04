@@ -3,16 +3,19 @@
 
 QComboDoubleSpinBox::QComboDoubleSpinBox(QWidget *parent)
 : QWidget(parent)
+, m_dPageStep( 0.0 )
 {
     ui.setupUi( this );
 
     setLayout( ui.horizontalLayout );
 
     double dPow = pow( 10.0, ui.qtDoubleSpinBox->decimals() );
-    ui.qtHorizontalSlider->setMinimum( static_cast< int >( ui.qtHorizontalSlider->minimum() * dPow ) );
-    ui.qtHorizontalSlider->setMaximum( static_cast< int >( ui.qtHorizontalSlider->maximum() * dPow ) );
-    ui.qtHorizontalSlider->setValue( static_cast< int >( ui.qtHorizontalSlider->value() * dPow ) );
-    ui.qtHorizontalSlider->setSingleStep( static_cast< int >( ui.qtHorizontalSlider->singleStep() * dPow ) );
+    int nValue = static_cast< int >( ui.qtDoubleSpinBox->maximum() * dPow );
+    ui.qtHorizontalSlider->setMinimum( static_cast< int >( ui.qtDoubleSpinBox->minimum() * dPow ) );
+    ui.qtHorizontalSlider->setMaximum( static_cast< int >( ui.qtDoubleSpinBox->maximum() * dPow ) );
+    ui.qtHorizontalSlider->setValue( static_cast< int >( ui.qtDoubleSpinBox->value() * dPow ) );
+    ui.qtHorizontalSlider->setSingleStep( static_cast< int >( ui.qtDoubleSpinBox->singleStep() * dPow ) );
+    m_dPageStep = ui.qtHorizontalSlider->pageStep();
     ui.qtHorizontalSlider->setPageStep( static_cast< int >( ui.qtHorizontalSlider->pageStep() * dPow ) );
 
     typedef void ( QDoubleSpinBox::*ValueChangedFunc )( double );
@@ -51,13 +54,14 @@ int QComboDoubleSpinBox::Decimals() const
 
 void QComboDoubleSpinBox::SetDecimals( int nDecimals )
 {
-//     int nOldDeciamals = ui.qtDoubleSpinBox->decimals();
-//     double dPow = pow( 10.0, nDecimals );
-//     ui.qtHorizontalSlider->setMinimum( static_cast< int >( ui.qtHorizontalSlider->minimum() * dPow ) );
-//     ui.qtHorizontalSlider->setMaximum( static_cast< int >( ui.qtHorizontalSlider->maximum() * dPow ) );
-//     ui.qtHorizontalSlider->setValue( static_cast< int >( ui.qtHorizontalSlider->value() * dPow ) );
-//     ui.qtHorizontalSlider->setSingleStep( static_cast< int >( ui.qtHorizontalSlider->singleStep() * dPow ) );
-//     ui.qtHorizontalSlider->setPageStep( static_cast< int >( ui.qtHorizontalSlider->pageStep() * dPow ) );
+    double dNewPow = pow( 10.0, nDecimals );
+    ui.qtHorizontalSlider->blockSignals( true );
+    ui.qtHorizontalSlider->setMinimum( static_cast< int >( ui.qtDoubleSpinBox->minimum() * dNewPow ) );
+    ui.qtHorizontalSlider->setMaximum( static_cast< int >( ui.qtDoubleSpinBox->maximum() * dNewPow ) );
+    ui.qtHorizontalSlider->setValue( static_cast< int >( ui.qtDoubleSpinBox->value() * dNewPow ) );
+    ui.qtHorizontalSlider->setSingleStep( static_cast< int >( ui.qtDoubleSpinBox->singleStep() * dNewPow ) );
+    ui.qtHorizontalSlider->setPageStep( static_cast< int >( m_dPageStep * dNewPow ) );
+    ui.qtHorizontalSlider->blockSignals( false );
 
     ui.qtDoubleSpinBox->setDecimals( nDecimals );
 }
@@ -120,14 +124,13 @@ void QComboDoubleSpinBox::SetSingleStep( double dValue )
 
 double QComboDoubleSpinBox::PageStep()
 {
-    double dPageStep = ui.qtHorizontalSlider->pageStep() / pow( 10.0, ui.qtDoubleSpinBox->decimals() );
-    return dPageStep;
+    return m_dPageStep;
 }
 
 void QComboDoubleSpinBox::SetPageStep( double dValue )
 {
-    int nValue = static_cast< int >( dValue * pow( 10.0, ui.qtDoubleSpinBox->decimals() ) );
-    ui.qtHorizontalSlider->setPageStep( nValue );
+    m_dPageStep = dValue;
+    ui.qtHorizontalSlider->setPageStep( static_cast< int >( dValue * pow( 10.0, ui.qtDoubleSpinBox->decimals() ) ) );
 }
 
 QAbstractSpinBox::ButtonSymbols QComboDoubleSpinBox::buttonSymbols() const

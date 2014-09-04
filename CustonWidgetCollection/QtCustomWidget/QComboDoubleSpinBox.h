@@ -130,6 +130,8 @@ private:
     void OnSliderValueChanged( int nValue );
 private:
     Ui::SliderDoubleSpinbox ui;
+
+    double m_dPageStep;
 };
 
 #endif // QCOMBODOUBLESPINBOX
